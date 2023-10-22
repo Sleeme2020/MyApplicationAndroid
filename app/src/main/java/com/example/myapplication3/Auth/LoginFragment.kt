@@ -65,7 +65,7 @@ class LoginFragment : Fragment, View.OnClickListener {
                 R.id.RegisterLink -> {
                     mListener?.onLinkFragment("Register")
                 }
-                R.id.LoginLink -> {}
+                R.id.LoginLink -> {mListener?.onLogin()}
                 else -> TODO("Not implementation click")
             }
         }else
