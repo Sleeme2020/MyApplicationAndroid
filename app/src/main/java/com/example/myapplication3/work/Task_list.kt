@@ -1,4 +1,4 @@
-package com.example.myapplication3.work.VM
+package com.example.myapplication3.work
 
 import android.os.Bundle
 import android.view.LayoutInflater

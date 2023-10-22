@@ -2,8 +2,7 @@ package com.example.myapplication3.work
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.NavController
-import androidx.navigation.findNavController
+import androidx.navigation.Navigation
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
@@ -18,7 +17,7 @@ class mainwork: AppCompatActivity() {
         setContentView(R.layout.mainwork)
 
         val NavView: BottomNavigationView = findViewById(R.id.nav_view)
-        val NavController = findNavController(R.id.nav_host_fragment)
+        val NavController = Navigation.findNavController(this,R.id.nav_host_fragment)
 
         val AppBarConfig =  AppBarConfiguration(
             setOf(
